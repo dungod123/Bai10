@@ -9,7 +9,10 @@ jobs:
       #add step checkout
       - name: Checkout code
         uses: actions/checkout@v3
-      #
+      #The actions/checkout@v3 step retrieves your repository files (including pom.xml) 
+      #into the runner's workspace at /home/runner/work/Bai10/Bai10,
+      # allowing Maven to locate and use the project configuration.
+      #fix error "The goal you specified requires a project to execute but there is no POM in this directory"
       - name: Set up JDK 17
         uses: actions/setup-java@v3
         with:

@@ -10,10 +10,13 @@
     </properties>
 
     <dependencies>
-        <dependency>
+        <!--error 2:  Failed to execute goal on project shipping-app: Could not resolve dependencies for project com.lab:shipping-app:jar:1.0-SNAPSHOT
+Error:  dependency: ch.qos.logback:logback-classic:jar:9.9.9 (compile)
+Error:  	Could not find artifact ch.qos.logback:logback-classic:jar:9.9.9 in -->
+        <dependency>  
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-            <version>9.9.9</version>
+            <version>1.4.11</version>
         </dependency>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
